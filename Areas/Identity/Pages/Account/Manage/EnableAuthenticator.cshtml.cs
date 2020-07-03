@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using webapp_auth.Areas.Identity.Data;
+using webapp_auth.Services;
 
 namespace webapp_auth.Areas.Identity.Pages.Account.Manage
 {
@@ -20,6 +21,7 @@ namespace webapp_auth.Areas.Identity.Pages.Account.Manage
         private readonly ILogger<EnableAuthenticatorModel> _logger;
         private readonly UrlEncoder _urlEncoder;
 
+        public string QrCodeAsBase64 { get; set; }
         private const string AuthenticatorUriFormat = "otpauth://totp/{0}:{1}?secret={2}&issuer={0}&digits=6";
 
         public EnableAuthenticatorModel(
@@ -54,7 +56,7 @@ namespace webapp_auth.Areas.Identity.Pages.Account.Manage
             public string Code { get; set; }
         }
 
-        public async Task<IActionResult> OnGetAsync()
+        public async Task<IActionResult> OnGetAsync([FromServices] QRCodeService qrCodeService)
         {
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
@@ -63,6 +65,7 @@ namespace webapp_auth.Areas.Identity.Pages.Account.Manage
             }
 
             await LoadSharedKeyAndQrCodeUriAsync(user);
+            QrCodeAsBase64 = qrCodeService.GetQRCodeAsBase64(AuthenticatorUri);
 
             return Page();
         }

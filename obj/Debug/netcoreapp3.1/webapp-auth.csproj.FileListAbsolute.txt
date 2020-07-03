@@ -126,7 +126,6 @@ D:\source\repos\webapp-auth\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.
 D:\source\repos\webapp-auth\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\source\repos\webapp-auth\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\source\repos\webapp-auth\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\source\repos\webapp-auth\obj\Debug\netcoreapp3.1\webapp-auth.csprojAssemblyReference.cache
 D:\source\repos\webapp-auth\obj\Debug\netcoreapp3.1\webapp-auth.AssemblyInfoInputs.cache
 D:\source\repos\webapp-auth\obj\Debug\netcoreapp3.1\webapp-auth.AssemblyInfo.cs
 D:\source\repos\webapp-auth\obj\Debug\netcoreapp3.1\webapp-auth.csproj.CoreCompileInputs.cache
@@ -163,3 +162,5 @@ D:\source\repos\webapp-auth\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\A
 D:\source\repos\webapp-auth\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
 D:\source\repos\webapp-auth\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 D:\source\repos\webapp-auth\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\source\repos\webapp-auth\bin\Debug\netcoreapp3.1\QRCoder.dll
+D:\source\repos\webapp-auth\obj\Debug\netcoreapp3.1\webapp-auth.csprojAssemblyReference.cache
